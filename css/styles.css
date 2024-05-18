@@ -1,0 +1,178 @@
+/* TAMAÑO PARA CELULAR */
+html{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+.header_img_container img{
+    display: block;
+    width: 100vw;
+}
+
+/* TODO ESTO ES EL STYLE DEL GRID */
+.grid_title{
+    text-align: center;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+}
+.grid_container{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+.grid_card{
+    width: 40%;
+    border: 2px solid black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(75, 43, 121);
+    color: antiquewhite;
+}
+
+.grid_img{
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 8px;
+    /* margin-bottom: 8px; */
+}
+
+.grid_img img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Convierte la imagen en un bloque para controlar márgenes y espaciado */
+    border-radius: 5px; 
+}
+
+.grid_name, .grid_price, .fa-trash-can{
+    font-size: 0.7rem;
+    margin: 0 10px;
+}
+
+.fa-trash-can{
+    margin-bottom: 8px;
+    align-self: flex-end;
+    font-size: 14px;
+}
+
+/* ACÁ ESTÁ EL STYLE DEL FORM */
+.form_title{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.form_input{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1.2px rgb(0, 23, 63) solid;
+    padding: 5px 10px;
+}
+
+.form_buttons_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_send{
+    background-color:rgb(0, 23, 63) ;
+    color:antiquewhite;
+    width: 45%;
+    height: 35px;
+    border-radius: 10px;
+    border: 0.5px solid antiquewhite;
+}
+
+.btn_send:hover{
+    background-color: rgb(2, 54, 146);
+    cursor:pointer;
+}
+
+.btn_clear{
+    color:rgb(0, 23, 63);
+    width: 45%;
+    height: 35px;
+    border-radius: 10px;
+    border: 0.5px solid rgb(0, 23, 63);
+}
+
+.btn_clear:hover{
+    background-color: rgb(254, 240, 221);
+    cursor: pointer;
+}
+
+.footer_container{
+    background-color:rgb(75, 43, 121) ;
+    color: antiquewhite;
+    margin: 70px 0 0 0;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text{
+    font-size: 1.3rem;
+}
+
+
+/* TAMAÑO PARA TABLET */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+html{
+    font-size: 20px;
+}
+.grid_container{
+    width: 90%;
+}
+.grid_card{
+    width: 30%;
+}
+
+.aside{
+    scale: 1.2;
+}
+
+}
+/* TAMAÑO PARA ESCRITORIO */
+@media only screen and (min-width: 1025px) {
+html{
+    font-size: 24px;
+}
+/* .grid{
+    justify-content: flex-start;
+} */
+.grid_container{
+    width: 80%;
+    /* margin-left: 50px; */
+}
+.grid_card{
+    width: 28%;
+}
+.section_grid, .section_form{
+    width: 50%;
+}
+.section_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+}
