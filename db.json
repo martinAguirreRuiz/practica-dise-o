@@ -1,0 +1,13 @@
+{
+    "productos": [
+        {
+            "name" : "producto 1",
+            "price" : "1000", 
+            "img" : "img/producto_luffy.jpg"},
+        {
+            "name" : "producto 2", 
+            "price" : "999",
+            "img" : "img/producto_luffy.jpg"
+        }
+    ]
+}
