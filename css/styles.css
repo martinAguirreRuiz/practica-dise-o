@@ -150,6 +150,12 @@ html{
     align-items: center;
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .footer_text{
     font-size: 1.3rem;
 }
