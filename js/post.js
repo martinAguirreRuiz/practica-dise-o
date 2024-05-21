@@ -1,7 +1,7 @@
 
 export async function addProduct(product){
     try {
-        const response = await fetch("https://practica-disenio.vercel.app/db.json", {
+        const response = await fetch("https://practica-disenio.vercel.app/productos", {
             method : "POST",
             headers: {"Content-type" : "application/json"},
             body: JSON.stringify(product)
