@@ -2,7 +2,7 @@
 export async function deleteProduct(idProduct){
     try {
         
-        const response = await fetch(`https://practica-disenio.vercel.app/productos/${idProduct}`, {
+        const response = await fetch(`https://practica-disenio.vercel.app/db.json/${idProduct}`, {
             method : "DELETE"
         });
 
