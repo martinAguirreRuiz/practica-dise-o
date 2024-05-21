@@ -52,9 +52,15 @@ html{
 
 .grid_img img {
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
+    height: 120px; /* Mantiene la proporción original de la imagen */
     display: block; /* Convierte la imagen en un bloque para controlar márgenes y espaciado */
     border-radius: 5px; 
+    object-fit: cover;
+
+}
+
+.grid_name{
+    font-weight: bold;
 }
 
 .grid_name, .grid_price, .fa-trash-can{
@@ -66,6 +72,14 @@ html{
     margin-bottom: 8px;
     align-self: flex-end;
     font-size: 14px;
+}
+
+.fa-trash-can:hover{
+    cursor: pointer;
+}
+
+.product_id{
+    display: none;
 }
 
 /* ACÁ ESTÁ EL STYLE DEL FORM */
@@ -90,6 +104,13 @@ html{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.form_warning{
+    margin-left: 5px;
+    color: rgb(227, 0, 0);
+    font-weight: bold;
+    display: none;
 }
 
 .btn_send{
@@ -145,7 +166,9 @@ html{
 .grid_card{
     width: 30%;
 }
-
+.grid_img img {
+    height: 169px;
+}
 .aside{
     scale: 1.2;
 }
@@ -165,6 +188,9 @@ html{
 }
 .grid_card{
     width: 28%;
+}
+.grid_img img {
+    height: 150px;
 }
 .section_grid, .section_form{
     width: 50%;

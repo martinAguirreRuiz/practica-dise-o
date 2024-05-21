@@ -1,4 +1,4 @@
-async function getProducts(){
+export async function getProducts(){
     try {
         
         const response = await fetch("http://localhost:3000/productos");
@@ -10,7 +10,6 @@ async function getProducts(){
         console.error("Error al obtener productos", error);
     }
 }
-
 
 function insertProducts(productos){
     const gridContainer = document.querySelector(".grid_container");
@@ -34,19 +33,25 @@ function insertProducts(productos){
 
         const price = document.createElement("p");
         price.classList.add("grid_price");
-        price.textContent = producto.price;
+        price.textContent = "$" + producto.price;
 
         const trashCan = document.createElement("i");
         trashCan.classList.add("fa-regular", "fa-trash-can");
+
+        const productId = document.createElement("span");
+        productId.classList.add("product_id");
+        productId.textContent = producto.id;
 
         card.appendChild(imgContainer);
         card.appendChild(name);
         card.appendChild(price);
         card.appendChild(trashCan);
+        card.appendChild(productId);
 
         gridContainer.appendChild(card);
 
     });
 }
 
-window.onload = getProducts;
+// window.onload = getProducts;
+

@@ -28,71 +28,14 @@
                 <div class="grid">
                     <div class="grid_container">
                         <!-- ACÁ TIENEN QUE IR LAS CARDS QUE SE VAYAN GENERANDO -->
-                        <div class="grid_card">
+                        <!-- <div class="grid_card">
                             <div class="grid_img">
                                 <img src="img/producto_luffy.jpg" alt="">
                             </div>                            
                             <p class="grid_name">Nombre</p>
                             <p class="grid_price">Precio</p>
                             <i class="fa-regular fa-trash-can"></i>
-                        </div>
-                        <div class="grid_card">
-                            <div class="grid_img">
-                                <img src="img/producto_luffy.jpg" alt="">
-                            </div>                            
-                            <p class="grid_name">Nombre</p>
-                            <p class="grid_price">Precio</p>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </div>
-                        <div class="grid_card">
-                            <div class="grid_img">
-                                <img src="img/producto_luffy.jpg" alt="">
-                            </div>                            
-                            <p class="grid_name">Nombre</p>
-                            <p class="grid_price">Precio</p>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </div>
-                        <div class="grid_card">
-                            <div class="grid_img">
-                                <img src="img/producto_luffy.jpg" alt="">
-                            </div>                            
-                            <p class="grid_name">Nombre</p>
-                            <p class="grid_price">Precio</p>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </div>
-                        <div class="grid_card">
-                            <div class="grid_img">
-                                <img src="img/producto_luffy.jpg" alt="">
-                            </div>                            
-                            <p class="grid_name">Nombre</p>
-                            <p class="grid_price">Precio</p>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </div>
-                        <div class="grid_card">
-                            <div class="grid_img">
-                                <img src="img/producto_luffy.jpg" alt="">
-                            </div>                            
-                            <p class="grid_name">Nombre</p>
-                            <p class="grid_price">Precio</p>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </div>
-                        <div class="grid_card">
-                            <div class="grid_img">
-                                <img src="img/producto_luffy.jpg" alt="">
-                            </div>                            
-                            <p class="grid_name">Nombre</p>
-                            <p class="grid_price">Precio</p>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </div>
-                        <div class="grid_card">
-                            <div class="grid_img">
-                                <img src="img/producto_luffy.jpg" alt="">
-                            </div>                            
-                            <p class="grid_name">Nombre</p>
-                            <p class="grid_price">Precio</p>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </div>
-                        
+                        </div> -->
                     </div>
                 </div>
             </article>
@@ -103,12 +46,12 @@
                 <h2 class="form_title">AGREGAR PRODUCTO</h2>
                 <div class="form">
                 <div class="form_container">
-                    <form action="">
-                        <div class="form_input_container"><input class="form_input" type="text" placeholder="Name"></div>
-                        <div class="form_input_container"><input class="form_input" type="number" placeholder="Price"></div>
-                        <div class="form_input_container"><input class="form_input" type="url" placeholder="Url Image"></div>
+                    <form action="" id="product_form">
+                        <div class="form_input_container"><input class="form_input form_name" type="text" placeholder="Name"><span class="form_warning name_warning">!</span></div>
+                        <div class="form_input_container"><input class="form_input form_price" type="number" placeholder="Price"><span class="form_warning price_warning">!</span></div>
+                        <div class="form_input_container"><input class="form_input form_img" type="text" placeholder="Url Image"><span class="form_warning img_warning">!</span></div>
                         <div class="form_buttons_container">
-                            <button class="btn_send">Enviar</button>
+                            <button type="submit" class="btn_send">Enviar</button>
                             <button class="btn_clear">Limpiar</button>
                         </div>
                     </form>
@@ -127,6 +70,6 @@
     <!-- SCRIPT PARA LOS ICONS -->
     <script src="https://kit.fontawesome.com/0d68c34e3a.js" crossorigin="anonymous"></script>
     <!-- SCRIPT PARA EL GET -->
-    <script src="js/get.js"></script>
+    <script src="js/functions.js" type="module"></script>
 </body>
 </html>

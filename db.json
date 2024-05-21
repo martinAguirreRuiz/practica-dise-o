@@ -1,13 +1,22 @@
 {
-    "productos": [
-        {
-            "name" : "producto 1",
-            "price" : "1000", 
-            "img" : "img/producto_luffy.jpg"},
-        {
-            "name" : "producto 2", 
-            "price" : "999",
-            "img" : "img/producto_luffy.jpg"
-        }
-    ]
+  "productos": [
+    {
+      "id": "13a2",
+      "name": "Muñeco Luffy",
+      "price": "1499",
+      "img": "img/producto_luffy.jpg"
+    },
+    {
+      "id": "d4c8",
+      "name": "Hermanos",
+      "price": "9999",
+      "img": "https://m.media-amazon.com/images/I/61t9FPsDkOL._AC_SL1002_.jpg"
+    },
+    {
+      "id": "0dba",
+      "name": "Gear 4",
+      "price": "14999",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_842599-MLA73269367272_122023-O.webp"
+    }
+  ]
 }
