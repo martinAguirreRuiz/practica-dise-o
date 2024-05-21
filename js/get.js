@@ -2,7 +2,8 @@ export async function getProducts(){
     try {
         
         const response = await fetch("https://practica-disenio.vercel.app/db.json");
-        const productos = await response.json();
+        const data = await response.json();
+        const productos = data.productos;
 
         insertProducts(productos);
 
