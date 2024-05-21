@@ -3,7 +3,10 @@ export async function getProducts(){
         
         const response = await fetch("https://practica-disenio.vercel.app/db.json");
         const data = await response.json();
+        console.log("Datos recibidos:", data); // Línea de depuración
         const productos = data.productos;
+
+        console.log("Productos:", productos); // Línea de depuración
 
         insertProducts(productos);
 
