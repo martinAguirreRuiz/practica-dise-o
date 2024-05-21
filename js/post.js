@@ -16,7 +16,7 @@ export async function addProduct(product){
 
     } catch (error) {
         console.error("Error al agregar producto", error);
-        throw error;
+        throw error; // comentario
     }
 }
 
